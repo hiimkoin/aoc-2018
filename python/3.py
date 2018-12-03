@@ -1,7 +1,7 @@
 from re import search
 from collections import defaultdict
 
-claim = [f.strip() for f in open('3.txt', 'r')]
+claim = [f.strip() for f in open('input/3.txt', 'r')]
 fields = defaultdict(int)
 
 for part in range(1, 3):

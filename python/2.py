@@ -1,4 +1,4 @@
-box_ids = [f.strip() for f in open('2.txt', 'r')]
+box_ids = [f.strip() for f in open('input/2.txt', 'r')]
 
 # p1
 final_result = {2: 0, 3: 0}

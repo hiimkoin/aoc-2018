@@ -2,8 +2,9 @@ from re import search
 from collections import defaultdict
 
 claim = [f.strip() for f in open('3.txt', 'r')]
-fields = defaultdict(int)
 
+# p1
+fields = defaultdict(int)
 for c in claim:
     m = search(r'#(\d*) @ (\d*),(\d*): (\d*)x(\d*)', c)
     parsed = list(map(int, m.groups()))
@@ -16,3 +17,5 @@ for c in claim:
             fields[(y, x)] += 1
 
 print(sum(1 for i in fields.values() if i > 1))
+
+# p2

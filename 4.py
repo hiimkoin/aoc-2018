@@ -1,7 +1,7 @@
 import re
 from datetime import datetime
 
-logs = [f.strip() for f in open('input/4.txt', 'r')]
+logs = [f.strip() for f in open('input/4', 'r')]
 logs.sort(key=lambda l:datetime.strptime(l[1:17], '%Y-%m-%d %H:%M'))
 
 guards = {}

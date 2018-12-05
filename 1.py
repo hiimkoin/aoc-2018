@@ -1,5 +1,5 @@
 # p1
-data = [int(f.strip()) for f in open('input/1.txt', 'r')]
+data = [int(f.strip()) for f in open('input/1', 'r')]
 print(sum(data))
 
 # p2

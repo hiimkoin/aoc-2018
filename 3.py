@@ -1,7 +1,7 @@
 from re import search
 from collections import defaultdict
 
-claim = [f.strip() for f in open('input/3.txt', 'r')]
+claim = [f.strip() for f in open('input/3', 'r')]
 fields = defaultdict(int)
 
 for part in range(1, 3):
@@ -21,7 +21,7 @@ for part in range(1, 3):
                     overlaps = True
                 fields[(y, x)] += 1
 
-        if part == 2 and overlaps == False: # p2
+        if part == 2 and not overlaps: # p2
             print(id)
 
     if part == 1: # p1
